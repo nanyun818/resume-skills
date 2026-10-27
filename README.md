@@ -18,7 +18,11 @@
 | <img src="docs/screenshots/fresh.png" width="400"> | <img src="docs/screenshots/modern.png" width="400"> |
 | 浅色右侧栏，适合教育、设计、医疗 | 圆角标签标题，适合产品、新媒体、创意 |
 
-截图使用 [示例数据](resume-builder/assets/sample.json) 生成，可以用 `node resume-builder/scripts/resume.mjs gallery --out _preview --pdf` 重新生成。
+截图使用 [示例数据](resume-builder/assets/sample.json) 生成。本地打开 `_preview/index.html` 可以对比全部模板，重新生成预览：
+
+```bash
+node resume-builder/scripts/resume.mjs gallery --out _preview --pdf
+```
 
 ## 目录
 
@@ -33,7 +37,7 @@
 
 ```bash
 cd resume-mcp && npm install
-claude mcp add resume -e RESUME_OUTPUT_DIR="D:/简历输出" -- node "D:/简历-skills/resume-mcp/server.mjs"
+claude mcp add resume -e RESUME_OUTPUT_DIR="/path/to/output" -- node "/path/to/resume-skills/resume-mcp/server.mjs"
 ```
 
 工具：`list_templates`、`get_resume_schema`、`render_resume`、`render_gallery`。
