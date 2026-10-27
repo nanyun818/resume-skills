@@ -1,0 +1,14 @@
+{
+  "name": "resume-mcp",
+  "version": "1.0.0",
+  "description": "简历生成 MCP 服务：8 套中文简历模板，输出 HTML / PDF",
+  "type": "module",
+  "main": "server.mjs",
+  "bin": { "resume-mcp": "server.mjs" },
+  "scripts": { "start": "node server.mjs" },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "3.25.76"
+  }
+}

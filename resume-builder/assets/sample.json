@@ -1,0 +1,82 @@
+{
+  "basics": {
+    "name": "张三",
+    "title": "Java 后端开发工程师",
+    "salary": "20-30K",
+    "jobCity": "上海",
+    "phone": "138-0000-0000",
+    "email": "zhangsan@example.com",
+    "city": "上海",
+    "age": 26,
+    "gender": "男",
+    "status": "离职-随时到岗",
+    "website": "github.com/example",
+    "photo": "avatar.svg",
+    "summary": "3 年互联网后端开发经验，熟悉高并发系统设计，主导过日活百万级系统的性能优化。"
+  },
+  "education": [
+    {
+      "school": "某某大学",
+      "major": "计算机科学与技术",
+      "degree": "本科",
+      "start": "2016.09",
+      "end": "2020.06",
+      "gpa": "3.7/4.0（专业前 10%）",
+      "highlights": ["主修课程：数据结构、操作系统、计算机网络、数据库原理"]
+    }
+  ],
+  "work": [
+    {
+      "company": "某某科技有限公司",
+      "position": "高级后端开发工程师",
+      "start": "2022.03",
+      "end": "",
+      "location": "上海",
+      "description": "负责电商交易中台核心链路的设计与开发。",
+      "highlights": [
+        "主导订单系统重构，引入分库分表与异步化，接口 P99 从 **800ms 降至 120ms**",
+        "设计秒杀方案（Redis 预扣库存 + MQ 削峰），支撑大促峰值 **5 万 QPS**",
+        "推动全链路压测与监控告警体系建设，线上故障率下降 60%"
+      ]
+    },
+    {
+      "company": "某某网络科技公司",
+      "position": "Java 开发工程师",
+      "start": "2020.07",
+      "end": "2022.02",
+      "highlights": [
+        "参与会员积分系统从 0 到 1 建设，服务 300 万注册用户",
+        "编写通用 RPC 鉴权组件，被 12 个业务服务复用"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "分布式任务调度平台",
+      "role": "核心开发",
+      "start": "2023.01",
+      "end": "2023.08",
+      "description": "基于 Spring Boot + Netty + ZooKeeper 自研调度平台，替换原有 Quartz 集群。",
+      "highlights": ["支持分片、失败重试、DAG 依赖编排", "日调度任务 20 万+，调度延迟 < 1s"]
+    }
+  ],
+  "skills": [
+    { "name": "Java / JVM", "level": 90 },
+    { "name": "Spring Boot / Cloud", "level": 85 },
+    { "name": "MySQL / Redis", "level": 85 },
+    { "name": "Kafka / RocketMQ", "level": 75 },
+    { "name": "Docker / K8s", "level": 65 }
+  ],
+  "awards": [
+    { "name": "公司年度优秀员工", "date": "2023.12" },
+    { "name": "ACM-ICPC 区域赛铜奖", "date": "2018.11" }
+  ],
+  "certificates": ["软考 系统架构设计师", "PMP 项目管理"],
+  "languages": [
+    { "name": "英语", "level": "CET-6" },
+    { "name": "普通话", "level": "母语" }
+  ],
+  "hobbies": ["开源", "跑步", "摄影"],
+  "selfEvaluation": "具备良好的系统设计能力与工程素养，注重代码质量；沟通顺畅，乐于分享，有带领 3 人小组的经验。",
+  "theme": { "template": "classic" }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>张三 - 简历</title>
+<style>:root{--c:#e07b39;--c-soft:#e07b391f;--fs:13px;--font:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC",sans-serif}
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #e9ecef; }
+body {
+  font-family: var(--font);
+  color: #333; font-size: var(--fs); line-height: var(--lh, 1.55);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.measuring .page, .measuring .cols { min-height: 0 !important; }
+.page { width: 210mm; min-height: 297mm; margin: 12px auto; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.12); overflow: hidden; }
+@media print {
+  html, body { background: #fff; }
+  .page { margin: 0; box-shadow: none; }
+  .entry, .simple-list li { break-inside: avoid; }
+  .section-title { break-after: avoid; }
+}
+ul { list-style: none; }
+strong { font-weight: 600; color: #222; }
+.photo { width: 26mm; height: 34mm; object-fit: cover; flex-shrink: 0; }
+.name { font-size: 26px; font-weight: 700; color: #222; letter-spacing: 2px; }
+.job { font-size: 14px; color: var(--c); margin-top: 2px; }
+.contacts { display: flex; flex-wrap: wrap; gap: 2px 16px; margin-top: 6px; color: #555; }
+.contacts .label { color: #999; margin-right: 2px; }
+.summary { margin-top: 6px; color: #555; }
+.section { margin-top: 10px; }
+.section-title { font-size: 15px; font-weight: 700; color: var(--c); margin-bottom: 5px; }
+.entry { margin-bottom: 6px; }
+.entry-head { display: flex; align-items: baseline; gap: 12px; }
+.entry-title { font-weight: 700; color: #222; }
+.entry-sub { color: #555; }
+.entry-date { margin-left: auto; color: #888; white-space: nowrap; font-size: .95em; }
+.entry-extra { color: #777; font-size: .95em; }
+.entry-desc { color: #444; }
+.entry-list li, .simple-list li { position: relative; padding-left: 12px; }
+.entry-list li::before, .simple-list li::before { content: ""; position: absolute; left: 2px; top: .7em; width: 4px; height: 4px; border-radius: 50%; background: var(--c); }
+.simple-list li { display: flex; gap: 10px; }
+.simple-name { flex: 1; }
+.simple-date { color: #888; white-space: nowrap; }
+.simple-level { white-space: nowrap; }
+.text { color: #444; text-align: justify; }
+.text + .text { margin-top: 4px; }
+.skill-group .tag { display: inline-block; padding: 0 8px; margin: 0 4px 4px 0; border-radius: 3px; background: var(--c-soft); color: var(--c); font-size: .92em; }
+.inline-list { display: flex; flex-wrap: wrap; gap: 2px 0; color: #444; }
+.inline-list span:not(:last-child)::after { content: "·"; margin: 0 10px; color: #bbb; }
+.inline-list em, .simple-level { font-style: normal; color: #888; margin-left: 6px; }
+
+.wrap { padding: 12mm 15mm; }
+.hd { display: flex; gap: 18px; align-items: center; padding: 10px 14px; background: var(--c-soft); border-radius: 10px; }
+.hd-info { flex: 1; }
+.hd .photo { border-radius: 10px; }
+.section-title { display: flex; align-items: center; gap: 10px; }
+.section-title span { background: var(--c); color: #fff; padding: 0 14px; border-radius: 12px; font-size: 14px; }
+.section-title::after { content: ""; flex: 1; height: 2px; background: var(--c-soft); }</style>
+</head>
+<body class="tpl-modern">
+<div class="page"><div class="wrap"><header class="hd"><img class="photo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjAgMzQwIj48cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjM0MCIgZmlsbD0iI2Q5ZGVlNSIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjEzMCIgcj0iNjIiIGZpbGw9IiNhYWIzYzAiLz48cGF0aCBkPSJNMjAgMzQwYzgtODAgNTQtMTIyIDExMC0xMjJzMTAyIDQyIDExMCAxMjJ6IiBmaWxsPSIjYWFiM2MwIi8+PC9zdmc+Cg==" alt="照片"><div class="hd-info"><div class="name">张三</div><div class="job">求职意向：Java 后端开发工程师 | 20-30K | 上海</div><div class="contacts"><span class="contact contact-phone"><span class="label">电话：</span>138-0000-0000</span><span class="contact contact-email"><span class="label">邮箱：</span>zhangsan@example.com</span><span class="contact contact-city"><span class="label">城市：</span>上海</span><span class="contact contact-age"><span class="label">年龄：</span>26</span><span class="contact contact-gender"><span class="label">性别：</span>男</span><span class="contact contact-status"><span class="label">状态：</span>离职-随时到岗</span><span class="contact contact-website"><span class="label">主页：</span>github.com/example</span></div><p class="summary">3 年互联网后端开发经验，熟悉高并发系统设计，主导过日活百万级系统的性能优化。</p></div></header><section class="section section-education"><h2 class="section-title"><span>教育背景</span></h2><div class="section-body"><div class="entry">
+  <div class="entry-head">
+    <span class="entry-title">某某大学</span>
+    <span class="entry-sub">计算机科学与技术 | 本科</span>
+    <span class="entry-date">2016.09 - 2020.06</span>
+  </div>
+  <div class="entry-extra">GPA：3.7/4.0（专业前 10%）</div><ul class="entry-list"><li>主修课程：数据结构、操作系统、计算机网络、数据库原理</li></ul>
+</div></div></section><section class="section section-work"><h2 class="section-title"><span>工作经历</span></h2><div class="section-body"><div class="entry">
+  <div class="entry-head">
+    <span class="entry-title">某某科技有限公司</span>
+    <span class="entry-sub">高级后端开发工程师</span>
+    <span class="entry-date">2022.03 - 至今</span>
+  </div>
+  <div class="entry-extra">上海</div><p class="entry-desc">负责电商交易中台核心链路的设计与开发。</p><ul class="entry-list"><li>主导订单系统重构，引入分库分表与异步化，接口 P99 从 <strong>800ms 降至 120ms</strong></li><li>设计秒杀方案（Redis 预扣库存 + MQ 削峰），支撑大促峰值 <strong>5 万 QPS</strong></li><li>推动全链路压测与监控告警体系建设，线上故障率下降 60%</li></ul>
+</div><div class="entry">
+  <div class="entry-head">
+    <span class="entry-title">某某网络科技公司</span>
+    <span class="entry-sub">Java 开发工程师</span>
+    <span class="entry-date">2020.07 - 2022.02</span>
+  </div>
+  <ul class="entry-list"><li>参与会员积分系统从 0 到 1 建设，服务 300 万注册用户</li><li>编写通用 RPC 鉴权组件，被 12 个业务服务复用</li></ul>
+</div></div></section><section class="section section-projects"><h2 class="section-title"><span>项目经历</span></h2><div class="section-body"><div class="entry">
+  <div class="entry-head">
+    <span class="entry-title">分布式任务调度平台</span>
+    <span class="entry-sub">核心开发</span>
+    <span class="entry-date">2023.01 - 2023.08</span>
+  </div>
+  <p class="entry-desc">基于 Spring Boot + Netty + ZooKeeper 自研调度平台，替换原有 Quartz 集群。</p><ul class="entry-list"><li>支持分片、失败重试、DAG 依赖编排</li><li>日调度任务 20 万+，调度延迟 &lt; 1s</li></ul>
+</div></div></section><section class="section section-skills"><h2 class="section-title"><span>专业技能</span></h2><div class="section-body"><ul class="simple-list skill-list"><li><span><strong>Java / JVM</strong></span></li><li><span><strong>Spring Boot / Cloud</strong></span></li><li><span><strong>MySQL / Redis</strong></span></li><li><span><strong>Kafka / RocketMQ</strong></span></li><li><span><strong>Docker / K8s</strong></span></li></ul></div></section><section class="section section-awards"><h2 class="section-title"><span>荣誉奖项</span></h2><div class="section-body"><ul class="simple-list"><li><span class="simple-name">公司年度优秀员工</span><span class="simple-date">2023.12</span></li><li><span class="simple-name">ACM-ICPC 区域赛铜奖</span><span class="simple-date">2018.11</span></li></ul></div></section><section class="section section-certificates"><h2 class="section-title"><span>证书资质</span></h2><div class="section-body"><div class="inline-list"><span>软考 系统架构设计师</span><span>PMP 项目管理</span></div></div></section><section class="section section-languages"><h2 class="section-title"><span>语言能力</span></h2><div class="section-body"><div class="inline-list"><span>英语<em>CET-6</em></span><span>普通话<em>母语</em></span></div></div></section><section class="section section-hobbies"><h2 class="section-title"><span>兴趣爱好</span></h2><div class="section-body"><div class="inline-list"><span>开源</span><span>跑步</span><span>摄影</span></div></div></section><section class="section section-selfEvaluation"><h2 class="section-title"><span>自我评价</span></h2><div class="section-body"><p class="text">具备良好的系统设计能力与工程素养，注重代码质量；沟通顺畅，乐于分享，有带领 3 人小组的经验。</p></div></section></div></div><script>(function(){
+  var root=document.documentElement, page=document.querySelector('.page');
+  var mm=document.createElement('div'); mm.style.height='297mm'; document.body.appendChild(mm);
+  var limit=mm.getBoundingClientRect().height; mm.remove();
+  function h(){ root.classList.add('measuring'); var v=page.scrollHeight; root.classList.remove('measuring'); return v; }
+  var fs=parseFloat(getComputedStyle(root).getPropertyValue('--fs'))||13, lh=1.55;
+  while(h()>limit && fs>11){ fs-=0.25; lh=Math.max(1.4,lh-0.02); root.style.setProperty('--fs',fs+'px'); root.style.setProperty('--lh',lh); }
+})();</script>
+</body>
+</html>
